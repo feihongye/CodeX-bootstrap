@@ -1,0 +1,58 @@
+  <nav class="navbar navbar-default" ng-controller="HeaderController">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">切换导航条</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/" ng-click = "tab = 0">CodeX Maker</a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li ng-class="{ active: isActive('/free-course')}"><a href="#/free-course" ng-click = "tab = 0">免费课程</a></li>
+          <li class="dropdown" ng-class="{ active: tab === 2}">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">常规课程<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li ng-class="{ active: isActive('/course-baby')}"><a href="#/course-baby" ng-click = "tab = 2">好奇宝宝（6-7周岁）</a></li>
+              <li ng-class="{ active: isActive('/course-cat')}"><a href="#/course-cat" ng-click = "tab = 2">科技猫（8-14周岁）</a></li>
+              <li ng-class="{ active: isActive('/course-maker')}"><a href="#/course-maker" ng-click = "tab = 2">创客达人（12-18周岁）</a></li>
+  <!--              <li><a href="#">假日训练营</a></li>-->
+            </ul>
+          </li>
+  <!--
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">假日训练营<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/program/">夏令营</a></li>
+              <li><a href="/program/">冬令营</a></li>
+              <li><a href="/program/">假日营</a></li>
+            </ul>
+          </li>
+  -->
+  
+          <li ng-class="{ active: isActive('/faq')}"><a href="#/faq" ng-click = "tab = 0">常见问题</a></li>
+          <li class="dropdown" ng-class="{ active: tab === 1}">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于我们<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li ng-class="{ active: isActive('/letter')}"><a href="#/letter" ng-click = "tab = 1">致家长信</a></li>
+  <!--              <li><a href="/about/history.html">公司起源</a></li>-->
+  <!--              <li><a href="/about/team.html">团队成员</a></li>-->
+              <li ng-class="{ active: isActive('/feature')}"><a href="#/feature" ng-click = "tab = 1">课程特色</a></li>
+  <!--              <li><a href="/about/join.html">加入我们</a></li>-->
+              <li ng-class="{ active: isActive('/contact')}"><a href="#/contact" ng-click = "tab = 1">联系方式</a></li>
+            </ul>
+          </li>
+  
+        </ul>
+  <!--        right narbar-->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#/contact" id="nav-contact">联系 <span class="glyphicon glyphicon-heart-empty"></span> 我们</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div> <!-- /.container-fluid -->
+  </nav>

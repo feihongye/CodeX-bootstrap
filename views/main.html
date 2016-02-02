@@ -1,0 +1,139 @@
+<header>
+  <div class="container" ng-controller="MainCtrl">
+    <div class="row">
+      <div class="col-md-12">
+<!--        <h1 class="typed-output">少儿编程,</h1>-->
+        <h1 type-it strings=texttyping class="typed-output"></h1>
+<!--        <h1>少儿编程，无限可能</h1>-->
+        <br>
+        <h3>欧美时下最流行的教育新趋势，再不跟上就out了</h3>
+        <br>
+        <a id="learnmore" href="" ng-click="gotoBottom()">了解&nbsp; <i class="fa fa-heartbeat"></i> &nbsp;更多</a>
+<!--          <span class="glyphicon glyphicon-heart"></span>-->
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="why-coding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-0" data-sr="enter left and move 50px over 1.33s">
+        <h3>数字时代的教育呼唤</h3>
+          <p class="quote-1"><i class="fa fa-rocket fa-3x fa-pull-left fa-border"></i>少儿学习编程是欧美近几年兴起的教育新趋势。Skype 的发源地爱沙尼亚政府已决定将学习电脑编程纳入正规教育体系。2014年英国政府规定，5岁以上学龄儿童必须学习电脑编程课程。此外，微软、苹果、谷歌、Facebook等科技企业也在全球范围内通过各种活动来推广编程教育，希望让更多学生接触并喜爱这一过去被认为是只有少数专业人士才能掌握的技能。国内一些眼界开阔的教育人士和程序员也呼吁让孩子们接触简单的编程。</p>
+          <a href="#/letter" ng-click="tab =1">阅读更多...</a>
+<!--          <p class="signature">美国总统奥巴马，2013年“编程一小时”开幕式主题演讲</p>-->
+     
+      </div>  
+<!--
+      <div class="col-md-5 col-md-offset-1" >
+          <img ng-src="/img/obama_s.png" alt="" class="img-responsive img-thumbnail obama-video">
+      </div>
+-->
+      <div class="col-md-5 col-md-offset-1" data-sr="enter right and move 50px over 1.33s">
+<!--        <div class="obama-video embed-responsive embed-responsive-16by9">-->
+<!--         <iframe width="400" height="225" src="../video/what-most-schools-dont-teach.mp4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="embed-responsive-item"></iframe>-->
+<!--        </div>-->
+        <img id="code-video" class="img-responsive" src="../video/code-video-thumbnail.jpg" alt="">
+        <img id="play-button" class="img-responsive" src="../video/play-button.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<span class="anchor" id="benefit"></span>
+<benefit-bar></benefit-bar>
+<!--  <quote-bar></quote-bar>-->
+<section id="quote">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2 class="quote"><i class="fa fa-quote-left fa-1x fa-pull-left"></i>Everybody in this country should learn how to program a computer... because it teaches you how to think.</h2>
+        <p class="jobs">- Steve Jobs, Apple’s co-founder </p>
+        <!--
+        <hr>
+        <h2 class="quote">"这个国家的每一个人都应该要学习如何为计算机编写程序... ... 因为它能教你如何思考。"</h2>
+        <p class="jobs">- 苹果公司联合创始人：史蒂夫·乔布斯</p>
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="courses" data-sr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="mytitle text-center">常规课程</h2>
+        <hr/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4" >
+        <div class="course">
+          <img class="img-responsive" src="../img/courses/baby.gif" alt="">
+          <h3>好奇宝宝（6-7周岁）</h3>
+          <p>本启蒙课程培养孩童对科技的兴趣，通过ScratchJr进行简单的游戏设计，动画模拟，故事表达等，初识编程概念，并为学习进阶课程打下基础。</p>
+          <a href="#/course-baby" class="btn">课程详情</a>
+        </div>
+      </div>  
+      <div class="col-md-4" >
+        <div class="course">
+          <img class="img-responsive" src="../img/courses/mBot-s.jpg" alt="">
+          <h3>科技猫（8-14周岁）</h3>
+          <p>本课程充分发挥中小学生的创意思维，通过学习游戏设计，控制mBot机器人等，掌握Scratch, Makeblock编程的概念，真正发现高科技的魅力。</p>
+          <a href="#/course-cat" class="btn">课程详情</a>
+        </div>
+      </div>
+      <div class="col-md-4" >
+        <div class="course">
+          <img class="img-responsive" src="../img/courses/coding-s.jpg" alt="">
+          <h3>创客达人（12-18周岁）</h3>
+          <p>本课程将进一步加深初高中学生对科技的认识，通过学习HTML, CSS, JS及Python等编程语言，提高编程实践能力，成为时下最流行的创客达人。</p>
+          <a href="#/course-maker" class="btn">课程详情</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="free-info" data-sr>
+  <div class="row">
+      <div class="col-md-12">
+        <div>
+          <h2>不太确定您的小孩是否会喜欢编程？</h2>
+          <p>没问题，我们为他们专门设计了免费体验课程！</p>
+          <a href="#/free-course" class="btn btn-lg" id="learn-info">免费体验课程&nbsp; <i class="fa fa-thumbs-o-up fa-1x"></i> </a>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="languages" >
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="mytitle text-center">授课所用编程语言与平台</h2>
+        <hr/>
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-md-8 col-md-offset-2" data-sr="enter bottom and move 30px over 1.33s">
+        <a href="http://www.scratchjr.org/" target="_blank"><img src="/img/logo/scratchjr.png" class="img-responsive lan-logo-1 scratchjr" alt=""></a>
+        <a href="http://cn.makeblock.cc/" target="_blank"><img src="/img/logo/makeblock.jpg" class="img-responsive lan-logo-1" alt=""></a>
+        <a href="https://www.python.org/" target="_blank"><img src="/img/logo/python.jpeg" class="img-responsive lan-logo-1" alt=""></a>
+      </div>     
+    </div>
+    <div class="row" data-sr>
+      <div class="col-md-10 col-md-offset-1" >
+        <a href="https://www.raspberrypi.org/" target="_blank" data-sr="enter left and move 30px over 1.5s"><img src="/img/logo/RaspberryPi.png" class="img-responsive lan-logo-2 raspberry" alt="" ></a>
+        <a href="https://scratch.mit.edu/" target="_blank" data-sr="enter left and move 30px over 1.0s"><img src="/img/logo/scratch5.png" class="img-responsive lan-logo-2 scratch" alt=""></a>
+        <a href="https://www.arduino.cc/" target="_blank" data-sr="enter left and move 30px over 0.5s"><img src="/img/logo/arduino-2.png" class="img-responsive lan-logo-2" alt=""></a>
+        <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" data-sr="enter right and move 30px over 0.5s"><img src="/img/logo/HTML5.png" class="img-responsive lan-logo-2" alt=""></a>
+        <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" data-sr="enter right and move 30px over 1.0s"><img src="/img/logo/css3-5.png" class="img-responsive lan-logo-2" alt=""></a>
+        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" data-sr="enter right and move 30px over 1.5s"><img src="/img/logo/JavaScript.png" class="img-responsive lan-logo-2" alt=""></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  <hr>-->

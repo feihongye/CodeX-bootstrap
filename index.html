@@ -1,17 +1,27 @@
 <!doctype html>
-<html lang="zh-cn">
+<html lang="zh-cn" ng-app="myApp">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>北极狐 - 儿童青少年创意科技教育项目</title>
+    <title>北极狐 - 少儿编程，无限可能</title>
+<!--    <base href="/">-->
     <meta name="description" content="CodeX Maker立足于上海，致力于运营面向21世纪儿童青少年的趣味电脑编程及创意科技教育项目，以提高学生的创新思维及动手能力。跟我们一起学习游戏开发，动画设计，艺术创作，网页设计，玩转物联网吧！">
     <meta name='keywords' content='北极狐, CodeX Maker, 创意科技, 科技创新教育, 科技竞赛，儿童编程, 上海儿童编程, 儿童编程课程, 青少年编程, 上海青少年编程, 青少年编程课程, 趣味编程, 机器人课程, 移动互联网, 可视化编程, 物联网, 智能硬件, 草莓派, raspberry pi, arduino, makeblock, mbot, appinventor, html, css, scratchJr, scratch, python, javascript' />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/type-it.css" />
+
+<!--    <link rel="stylesheet" href="css/quote.css" />-->
+<!--    <link rel="stylesheet" href="css/animation.css" />-->
+<!--   animation for ng-view-->
+<!--    <link rel="stylesheet" href="css/ng-animate.css" />-->
+<!--    <link rel="stylesheet" href="css/headroom.css" />-->
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,238 +29,30 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">切换导航条</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">CodeX Maker</a>
-      </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">课程项目<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">好奇宝宝（5-7周岁）</a></li>
-              <li><a href="#">科技猫（8-12周岁）</a></li>
-              <li><a href="#">创客达人（12周岁+）</a></li>
-              <li><a href="#">假日训练营</a></li>
-            </ul>
-          </li>
-          <li><a href="#">体验课程</a></li>
-          <li><a href="#">常见问题</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于我们<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">公司起源</a></li>
-              <li><a href="#">团队成员</a></li>
-              <li><a href="#">加入我们</a></li>
-            </ul>
-          </li>
-          
-        </ul>
-<!--        right narbar-->
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" id="contact">联系 <span class="glyphicon glyphicon-heart-empty"></span> 我们</a></li>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-
-
-  <header>
-    <h1>少儿编程，无限可能</h1>
-    <br>
-    <h3>欧美时下最流行的教育新趋势，再不跟上就out了</h3>
-    <br>
-    <a href="#benefit" id="learnmore">了解&nbsp; <span class="glyphicon glyphicon-heart"></span> &nbsp;更多</a>
-  </header>
+<body data-sr-container='{ "reset":true, "vFactor": 0.2, "delay": "onload", "opacity": 0.0 }' ng-cloak>
+  <nav-bar></nav-bar>
+  <div ng-view ></div>
+  <footer-bar></footer-bar>
   
-  
-  <section id="courses" data-sr class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="mytitle">常规课程</h2>
-        <hr/>
-      </div>
-    </div>
-    <div>
-      <div class="row">
-        <div class="col-md-4" data-sr>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">好奇宝宝</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-            <div class="panel-footer">Panel footer</div>
-          </div>
-        </div>  
-        <div class="col-md-4" data-sr>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">好奇宝宝</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-            <div class="panel-footer">Panel footer</div>
-          </div>
-        </div>
-        <div class="col-md-4" data-sr>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">好奇宝宝</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-            <div class="panel-footer">Panel footer</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="medium-12 columns">
-        <div class="panel callout radius" id="freeinfo" data-sr>
-          <h3>不太确定您的小孩是否会喜欢coding？</h3>
-          <p>没问题，我们为此专门设计了免费体验课程！</p>
-          <a href="#" class="button radius animated swing infinite" id="free">了解体验课程</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="quote">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <h2 class="quote">"Everybody in this country should learn how to program a computer... because it teaches you how to think."</h2>
-          <p class="jobs">- Steve Jobs, Apple’s co-founder </p>
-          <!--
-          <hr>
-          <h2 class="quote">"这个国家的每一个人都应该要学习如何为计算机编写程序... ... 因为它能教你如何思考。"</h2>
-          <p class="jobs">- 苹果公司联合创始人：史蒂夫·乔布斯</p>
-          -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="benefit" data-sr class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="mytitle">小孩学习编程的好处</h2>
-        <hr/>
-      </div>
-    </div>
-    <div class="row benefits">
-<!--     1st line-->
-      <div class="col-sm-6" data-sr>
-        <img class="img-responsive" src="img/children.jpg" alt="">
-      </div>
-      <div class="col-sm-5 col-sm-offset-1" data-sr>
-        <span class="glyphicon glyphicon-paperclip size-72"></span>
-        <h3 data-sr>强化逻辑思维能力</h3>
-        <p>编程其实就是如何把大问题不断分割成小问题的过程，其中，小孩必须去思考如何把代码合理的安排在整个程序中，才能让程序流畅运行，这无疑将极大的提升小孩对事物的逻辑分析能力。</p>
-      </div>
-    </div>
-<!--     2nd line-->
-    <div class="row benefits">
-      <div class="col-sm-6 col-sm-offset-1 col-sm-push-5" data-sr>
-        <img class="img-responsive" src="img/children.jpg" alt="">
-      </div>
-      <div class="col-sm-5 col-sm-pull-7" data-sr>
-        <span class="glyphicon glyphicon-ok-circle size-72"></span>
-        <h3>培养专注力与耐性</h3>
-        <p>Debug（调试），是每个编程人员的必经之路，不论大人小孩都不例外。在学习编程debug的过程中，是绝对无法得过且过的，因此，这能有效改正小孩马虎行事的毛病，避免当个差不多先生。</p>
-      </div>
-    </div>
-      
-<!--     3rd line-->   
-    <div class="row benefits">
-      <div class="col-sm-6" data-sr>
-        <img class="img-responsive" src="img/children.jpg" alt="">
-      </div>   
-      <div class="col-sm-5 col-sm-offset-1" data-sr>
-        <span class="glyphicon glyphicon-flash size-72"></span>
-        <h3>开启创新思维之门</h3>
-        <p>孩子们与机器互动，使用电脑解决复杂的问题，将想法付诸于实践，在整个过程中将会产生无数的创意。这样的体验既培养了学生的创新意识，又提高了实践能力，更为创新思维插上了飞翔的翅膀。</p>
-      </div>
-    </div>
-<!--     4th line-->
-    <div class="row benefits">
-      <div class="col-sm-6 col-sm-offset-1 col-sm-push-5" data-sr>
-        <img class="img-responsive" src="img/children.jpg" alt="">
-      </div>
-      <div class="col-sm-5 col-sm-pull-7" data-sr>
-        <span class="glyphicon glyphicon-wrench size-72"></span>
-        <h3>提高问题解决能力</h3>
-        <p>面对各种编程挑战时，小孩会利用学到的知识，并为通过关卡而不断地动脑。一旦养成这种习惯，在碰到生活中或是学习上的问题时，自然也会试着自己解决，而不是一句话交给爸妈去处理。</p>
-      </div>
-    </div>
-     
-    <div class="row benefits">
-      <div class="col-sm-6" data-sr>
-        <img class="img-responsive" src="img/children.jpg" alt="">
-      </div>
-      <div class="col-sm-5 col-sm-offset-1" data-sr>
-        <span class="glyphicon glyphicon-education size-72"></span>
-        <h3>提升全球化竞争力</h3>
-        <p>小孩在幼时接触的环境，往往跟以后的发展有极大的关联。如果不想与世界脱轨，就应该尽早让他们学习电脑编程，或是了解编程是怎么一回事，这将会是他们日后面对国际竞争时的有力武器。</p>
-      </div>
-    </div>
-
-  </section>
-    
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-8">
-          <ul id="address">
-            <li><span class="glyphicon glyphicon-map-marker size-16"></span>上海市杨浦区世纪大道100号</li>
-<!--
-            <li><i class="fi-telephone"></i> 电话：xxxx-xxxx
-              <br>(最佳致电时间：周一至周五上午10点 - 下午5点)</li>
--->
-            <li><span class="glyphicon glyphicon-envelope size-16"></span> <a href='mailto:info@codexmaker.com'>info@codexmaker.com</a></li>
-            <li>微信：codex</li>
-          </ul>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <ul id="about">
-            <li><a href="#" data-reveal-id="aboutus">关于我们</a></li>
-            <li><a href="#courses">课程项目</a></li>
-            <li><a href="#team">核心团队</a></li>
-            <li><a href="#">校企合作</a></li>
-            <li><a href="#">工作机会</a></li>
-          </ul>
-        </div>
-        <div class="col-md-5" id="vision">           
-          <p>CodeX Maker 致力于推广与运营专为儿童青少年定制的趣味电脑编程及创意科技教育项目，以提高新时代学生的创新思维及动手能力，并有效地发掘他们对高科技的兴趣，从而培育他们的信息与媒体素养，进而成为21世纪创新科技发展的推动者。</p>
-          <p id="copy-right">版权所有 © 2016-2020 上海北极狐教育科技有限公司</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/scrollreveal.js"></script>
-  <script src="js/scripts.js"></script>  
+  <script src="js/lib/bootstrap.min.js"></script>
+  <script src="js/lib/angular.min.js"></script> 
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+  <!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>-->
+  <script src="js/lib/angular-route.min.js"></script> 
+<!--  <script src="js/lib/angular-animate.min.js"></script>   -->
+
+  <script src="js/app.js"></script> 
+  <script src="js/directive.js"></script> 
+<!--  <script src="js/plugin-directive/directive.js"></script> -->
+  <script src="js/lib/scrollreveal.js"></script>
+<!--  <script src="https://rawgit.com/julianlloyd/scrollReveal.js/v2.1.0/scrollReveal.js"></script>-->
+  <script src="js/lib/fox-angular-scrollReveal.min.js"></script>
+  <script src="js/lib/typed.min.js"></script>
+
+  
 </body>
 </html>
